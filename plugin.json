@@ -7,12 +7,12 @@
     {
         "name": "Blogtruyenmoi",
         "author": "bexom",
-        "path": "https://raw.githubusercontent.com/b3x0m/vbook-extensions/master/blogtruyenmoi/plugin.zip",
+        "path": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/blogtruyenmoi/plugin.zip",
         "version": 1,
         "type": "comic",
         "locate": "vi_VN",
         "source": "https://blogtruyenmoi.com/",
-        "icon": "https://raw.githubusercontent.com/b3x0m/vbook-extensions/master/blogtruyenmoi/icon.png",
+        "icon": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/blogtruyenmoi/icon.png",
         "description": "Đọc truyện trên trang Blogtruyenmoi"
         }
     ]
