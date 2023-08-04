@@ -7,7 +7,7 @@ function execute(url) {
         var detail = doc.select(".l-book-list-field");
         var cover = doc.select("img").first().attr("data-pagespeed-high-res-src")
         if (!cover) cover = doc.select("img").first().attr("src")
-        var status = doc.select(".l-book-list-field .status-chapter").html()
+        var status = doc.select(".l-book-list-field > .status-chapter").html()
         doc.select("div.info-book").remove()
 
         return Response.success({

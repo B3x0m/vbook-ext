@@ -10,10 +10,10 @@ function execute(url, page) {
         const data = [];
         doc.select(".box-book-info").forEach(e => {
             data.push({
-                name: e.select(".h3 a").first().text(),
+                name: e.select("a.name-book").first().text(),
                 link: e.select("a").first().attr("href"),
                 cover: e.select("img").first().attr("src"),
-                description: e.select(".box-book-info item-chapter").text(),
+                description: e.select("chapter-text").text(),
                 host: "https://hiepnu.net"
             });
         });
