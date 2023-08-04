@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Hiệp Nữ",
     "author": "bexom",
-    "version": 1,
+    "version": 2,
     "source": "https://hiepnu.net",
     "regexp": "(www.)?(hiepnu.net)/[^/]+/?$",
     "description": "Đọc truyện trên Hiệp Nữ",
