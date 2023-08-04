@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "name": "Hiệp Nữ",
+    "author": "bexom",
+    "version": 1,
+    "source": "https://hiepnu.net",
+    "regexp": "(www.)?(hiepnu.net)/[^/]+/?$",
+    "description": "Đọc truyện trên Hiệp Nữ",
+    "locale": "vi_VN",
+    "type": "novel",
+    "language": "javascript"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "page": "page.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
