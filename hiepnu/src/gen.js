@@ -8,10 +8,10 @@ function execute(url, page) {
         if (next) next = next[1]
 
         const data = [];
-        doc.select(".box-cate-list.list-view li").forEach(e => {
+        doc.select(".list-view li").forEach(e => {
             data.push({
-                name: e.select("li a").first().text(),
-                link: e.select("li a").first().attr("href"),
+                name: e.select("a").first().text(),
+                link: e.select("a").first().attr("href"),
                 cover: e.select("img").first().attr("src"),
                 description: e.select(".box-book-info item-chapter").text(),
                 host: "https://hiepnu.net"
