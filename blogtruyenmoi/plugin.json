@@ -1,19 +1,21 @@
 {
   "metadata": {
-    "author": "<bexom>",
-    "description": ""
+    "name": "Blogtruyenmoi",
+    "author": "bexom",
+    "version": 1,
+    "source": "https://blogtruyenmoi.com",
+    "regexp": "(www.)?(m\\.)?blogtruyenmoi.com/\\d+/[0-9a-z-]+/?$",
+    "description": "Đọc truyện trên trang Blogtruyenmoi",
+    "locale": "vi_VN",
+    "language": "javascript",
+    "type": "comic"
   },
-  "data": [
-    {
-        "name": "Blogtruyenmoi",
-        "author": "bexom",
-        "path": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/blogtruyenmoi/plugin.zip",
-        "version": 1,
-        "type": "comic",
-        "locate": "vi_VN",
-        "source": "https://blogtruyenmoi.com/",
-        "icon": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/blogtruyenmoi/icon.png",
-        "description": "Đọc truyện trên trang Blogtruyenmoi"
-        }
-    ]
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
 }
