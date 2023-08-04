@@ -8,9 +8,9 @@ function execute(url, page) {
         if (next) next = next[1]
 
         const data = [];
-        doc.select(".list-view li").forEach(e => {
+        doc.select(".box-book-info").forEach(e => {
             data.push({
-                name: e.select("a").first().text(),
+                name: e.select(".h3 a").first().text(),
                 link: e.select("a").first().attr("href"),
                 cover: e.select("img").first().attr("src"),
                 description: e.select(".box-book-info item-chapter").text(),
