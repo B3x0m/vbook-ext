@@ -2,7 +2,7 @@ function execute(url) {
     url = url.replace("hiepnu.net");
     let response = fetch(url);
     if (response.ok) {
-        let doc = response.html().select(".book-list-field");
+        let doc = response.html().select(".l-book-list-field");
 
         var detail = doc.select(".l-book-list-field");
         var cover = doc.select("img").first().attr("data-pagespeed-high-res-src")
