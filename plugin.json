@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "author": "<bexom>",
+    "author": "bexom",
     "description": ""
   },
   "data": [
@@ -14,6 +14,17 @@
         "source": "https://blogtruyenmoi.com/",
         "icon": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/blogtruyenmoi/icon.png",
         "description": "Đọc truyện trên trang Blogtruyenmoi"
+        },
+    {
+        "name": "Hiệp Nữ",
+        "author": "bexom",
+        "path": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/hiepnu/plugin.zip",
+        "version": 1,
+        "type": "novel",
+        "locate": "vi_VN",
+        "source": "https://hiepnu.net/",
+        "icon": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/hiepnu/icon.png",
+        "description": "Đọc truyện trên Hiệp Nữ"
         }
     ]
 }
