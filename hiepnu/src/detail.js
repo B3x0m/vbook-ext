@@ -4,17 +4,17 @@ function execute(url) {
     if (response.ok) {
         let doc = response.html().select(".book-list-field");
 
-        var detail = doc.select(".l-book-list-field div.info-book");
+        var detail = doc.select(".l-book-list-field");
         var cover = doc.select("img").first().attr("data-pagespeed-high-res-src")
         if (!cover) cover = doc.select("img").first().attr("src")
-        var status = doc.select(".content1 .status").html()
-        doc.select("div.status-chapter").remove()
+        var status = doc.select(".l-book-list-field .status-chapter").html()
+        doc.select("div.info-book").remove()
 
         return Response.success({
             name: doc.select("h1.hl-name-book").first().text(),
             cover: cover,
-            author: detail.select("a").first().text(),
-            description: doc.select(".trichdan").html(),
+            author: detail.select("a.name-author").first().text(),
+            description: doc.select(".box-show-des").html(),
             detail: detail.html(),
             host: "https://hiepnu.net",
             ongoing: status.indexOf("Đang ra") >= 0
