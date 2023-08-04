@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "author": "<bexom>",
+    "description": ""
+  },
+  "data": [
+    {
+        "name": "Blogtruyenmoi",
+        "author": "bexom",
+        "path": "https://raw.githubusercontent.com/b3x0m/vbook-extensions/master/blogtruyenmoi/plugin.zip",
+        "version": 1,
+        "type": "comic",
+        "locate": "vi_VN",
+        "source": "https://blogtruyenmoi.com/",
+        "icon": "https://raw.githubusercontent.com/b3x0m/vbook-extensions/master/blogtruyenmoi/icon.png",
+        "description": "Đọc truyện trên trang Blogtruyenmoi"
+        }
+    ]
+}
