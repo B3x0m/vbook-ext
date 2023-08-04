@@ -1,26 +1,27 @@
 function execute(key, page) {
     if (!page) page = '1';
-    var browser = Engine.newBrowser();
-    browser.launch("https://hiepnu.net/tim-kiem?tukhoa=" + key, 1000);
-    browser.close()
+    let response = fetch("https://hiepnu.net/tim-kiem?tukhoa=" + key + "/trang-" + page);
+    if (response.ok) {
+        let doc = response.html();
 
-    var urls = JSON.parse(browser.urls());
-    var novelList = [];
-    var next = "";
-    urls.forEach(requestUrl => {
-        if (requestUrl.indexOf("api.truyen.onl/v2/books") >= 0) {
-            var response = JSON.parse(Http.get(requestUrl).string());
-            next = response._extra._pagination._next;
-            response._data.forEach(book => {
-                novelList.push({
-                    name: book.name,
-                    link: "/truyen/" + book.slug,
-                    description: book.author_name,
-                    cover: book['poster']['default'],
-                    host: "https://hiepnu.net"
-                })
+        var next = doc.select(".pagination").select(".next").select("a").attr("href").match(/trang-(\d+)/)
+        if (next) next = next[1]
+
+        const data = [];
+
+        doc.select(".grid-items .inner-item").forEach(e => {
+            data.push({
+                name: e.select(".name-book").text(),
+                link: e.select("a").first().attr("href"),
+                cover: e.select("img").first().attr("src"),
+                description: e.select(".rate").text(),
+                host: "https://hiepnu.net"
             });
-        }
-    });
-    return Response.success(novelList, next);
+        });
+
+        return Response.success(data, next);
+    }
+
+    return null;
+
 }
