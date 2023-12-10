@@ -12,10 +12,10 @@ function execute(url) {
             doc = fetch(nextPart).html();
             nextPart = BASE_URL + doc.select(".text-center a").last().attr("href");
             doc.select("↑返回顶部↑").remove();
-            // doc.select(".report").remove();
+            doc.select("#rtext.readcontent a").remove();
             // doc.select('p[style*=\"color:red;\"]').remove();
             // doc.select('ins').remove();
-            // doc.select('script').remove();
+            doc.select('script').remove();
             content += doc.select("#rtext");
         } while (nextPart.indexOf("_") !== -1)
 
