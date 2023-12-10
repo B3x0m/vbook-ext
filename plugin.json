@@ -5,17 +5,6 @@
   },
   "data": [
     {
-        "name": "Blogtruyenmoi",
-        "author": "bexom",
-        "path": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/blogtruyenmoi/plugin.zip",
-        "version": 1,
-        "type": "comic",
-        "locate": "vi_VN",
-        "source": "https://blogtruyenmoi.com/",
-        "icon": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/blogtruyenmoi/icon.png",
-        "description": "Đọc truyện trên trang Blogtruyenmoi"
-        },
-    {
         "name": "Hiệp Nữ",
         "author": "bexom",
         "path": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/hiepnu/plugin.zip",
@@ -26,5 +15,16 @@
         "icon": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/hiepnu/icon.png",
         "description": "Đọc truyện trên Hiệp Nữ"
         }
+    {
+      "name": "520danmei",
+      "author": "bexom",
+      "path": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/520danmei/plugin.zip",
+      "version": 1,
+      "source": "https://520danmei.org",
+      "icon": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/520danmei/icon.png",
+      "description": "Đọc truyện trên trang 520danmei",
+      "type": "chinese_novel",
+      "locale": "zh-CN"
+    },
     ]
 }
