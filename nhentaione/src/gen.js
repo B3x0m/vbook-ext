@@ -1,6 +1,6 @@
 function execute(url, page) {
     if (!page) page = '1';
-    const doc = Http.get(url).params({"page": page}).html()
+    const doc = Http.get(url + "/page/" + page).html();
 
     var next = doc.select(".pagination").select("a.current + a").text()
 

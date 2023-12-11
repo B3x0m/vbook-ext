@@ -1,6 +1,6 @@
 function execute(key, page) {
     if (!page) page = '1';
-    const doc = Http.get("https://nhentai.net/search").params({ "q": key, "page": page }).html();
+    const doc = Http.get("https://nhentai.one/page" + page).params({ "s": key }).html();
 
     var next = doc.select(".pagination").select("a.current + a").text()
 
@@ -12,8 +12,8 @@ function execute(key, page) {
         data.push({
             name: e.select(".caption").first().text(),
             link: e.select("a").first().attr("href"),
-            cover: e.select("img").first().attr("data-src"),
-            description: e.select(".chapter a").first().text(),
+            cover: e.select("img").first().attr("src"),
+            // description: e.select(".chapter a").first().text(),
             host: "https://nhentai.one"
         })
     }
