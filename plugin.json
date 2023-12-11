@@ -11,7 +11,7 @@
         "version": 2,
         "type": "novel",
         "locate": "vi_VN",
-        "source": "https://hiepnu.net/",
+        "source": "https://hiepnu.net",
         "icon": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/hiepnu/icon.png",
         "description": "Đọc truyện trên Hiệp Nữ"
     },
@@ -25,6 +25,17 @@
         "description": "Đọc truyện trên trang 520danmei",
         "type": "chinese_novel",
         "locale": "zh-CN"
-    }
+    },
+    {
+        "name": "nHentai.one",
+        "author": "bexom",
+        "path": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/nhentaione/plugin.zip",
+        "version": 1,
+        "type": "comic",
+        "locate": "en_EN",
+        "source": "https://nhentai.one",
+        "icon": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/nhentaione/icon.png",
+        "description": "Đọc truyện trên nHentai.one"
+    },
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "nHentai.one",
+    "author": "bexom",
+    "version": 1,
+    "source": "https://nhentai.one",
+    "regexp": "(www.)?nhentai.one/(.*?)/?$",
+    "description": "Đọc truyện trên trang nHentai.one",
+    "locale": "locale",
+    "language": "javascript",
+    "type": "comic",
+    "tag": "nsfw"
+  },
+  "script": {
+    "home": "home.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
