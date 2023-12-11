@@ -33,7 +33,7 @@
         "version": 1,
         "type": "comic",
         "locale": "en_US",
-        "source": "https://nhentai.net",
+        "source": "https://nhentai.one",
         "icon": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/nhentaione/icon.png",
         "description": "Đọc truyện trên trang nHentai.one",
         "tag": "nsfw"
