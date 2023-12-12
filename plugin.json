@@ -27,16 +27,27 @@
         "locale": "zh-CN"
     },
     {
-        "name": "nHentai.one",
+      "name": "nHentai.one",
+      "author": "bexom",
+      "path": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/nhentaione/plugin.zip",
+      "version": 1,
+      "type": "comic",
+      "locale": "en_US",
+      "source": "https://nhentai.net",
+      "icon": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/nhentaione/icon.png",
+      "description": "Đọc truyện trên trang nHentai.one",
+      "tag": "nsfw"
+    },
+    {
+        "name": "Xbanxia",
         "author": "bexom",
-        "path": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/nhentaione/plugin.zip",
+        "path": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/xbanxia/plugin.zip",
         "version": 1,
-        "type": "comic",
-        "locale": "en_US",
-        "source": "https://nhentai.one",
-        "icon": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/nhentaione/icon.png",
-        "description": "Đọc truyện trên trang nHentai.one",
-        "tag": "nsfw"
-    }
+        "source": "https://www.xbanxia.com",
+        "icon": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/xbanxia/icon.png",
+        "description": "Đọc truyện trên trang Xbanxia",
+        "type": "chinese_novel",
+        "locale": "zh-CN"
+    },
   ]
 }
