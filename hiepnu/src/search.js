@@ -1,6 +1,6 @@
 function execute(key, page) {
     if (!page) page = '1';
-    let response = fetch("https://hiepnu.net/tim-kiem?tukhoa=" + key + "/trang-" + page);
+    let response = fetch("https://hiepnu.net/tim-kiem?tukhoa=" + key);
     if (response.ok) {
         let doc = response.html();
 
@@ -9,12 +9,12 @@ function execute(key, page) {
 
         const data = [];
 
-        doc.select(".grid-items .inner-item").forEach(e => {
+        doc.select("div.box-cate-list.list-view ul li").forEach(e => {
             data.push({
-                name: e.select(".name-book").text(),
+                name: e.select("a.name-book").first().text(),
                 link: e.select("a").first().attr("href"),
-                cover: e.select("img").first().attr("src"),
-                description: e.select(".rate").text(),
+                cover: e.select(".img img").first().attr("src"),
+                description: e.select("a.name-author").text(),
                 host: "https://hiepnu.net"
             });
         });

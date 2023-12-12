@@ -4,7 +4,7 @@
     "author": "bexom",
     "version": 2,
     "source": "https://hiepnu.net",
-    "regexp": "(www.)?(hiepnu.net)/[^/]+/?$",
+    "regexp": "https://hiepnu.net/(.*?)/?$",
     "description": "Đọc truyện trên Hiệp Nữ",
     "locale": "vi_VN",
     "type": "novel",
