@@ -49,5 +49,16 @@
         "type": "chinese_novel",
         "locale": "zh-CN"
     },
+    {
+        "name": "uuxs",
+        "author": "bexom",
+        "path": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/uuxs/plugin.zip",
+        "version": 1,
+        "source": "https://www.uuxs.com",
+        "icon": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/uuxs/icon.png",
+        "description": "Đọc truyện trên trang uuxs",
+        "type": "chinese_novel",
+        "locale": "zh-CN"
+    },
   ]
 }
