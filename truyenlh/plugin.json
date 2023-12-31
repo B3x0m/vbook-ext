@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "Truyện LH",
+    "author": "Nhocconsr",
+    "version": 2,
+    "source": "https://truyenlh.com",
+    "regexp": "(www.)?truyenlh.com/truyen-tranh/[^/]+/?",
+    "description": "Đọc truyện trên trang truyenlh.com",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "comic"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
