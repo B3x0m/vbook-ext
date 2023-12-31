@@ -50,6 +50,17 @@
         "locale": "zh-CN"
     },
     {
+        "name": "Truyện LH",
+        "author": "bexom",
+        "path": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/truyenlh/plugin.zip",
+        "version": 1,
+        "type": "comic",
+        "locate": "vi_VN",
+        "source": "https://truyenlh.com",
+        "icon": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/truyenlh/icon.png",
+        "description": "Đọc truyện trên Truyện LH"
+    }
+    {
         "name": "uuxs",
         "author": "bexom",
         "path": "https://raw.githubusercontent.com/b3x0m/vbook-ext/main/uuxs/plugin.zip",
