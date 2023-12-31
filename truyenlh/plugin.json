@@ -1,8 +1,8 @@
 {
   "metadata": {
     "name": "Truyện LH",
-    "author": "Nhocconsr",
-    "version": 2,
+    "author": "bexom",
+    "version": 1,
     "source": "https://truyenlh.com",
     "regexp": "(www.)?truyenlh.com/truyen-tranh/[^/]+/?",
     "description": "Đọc truyện trên trang truyenlh.com",
